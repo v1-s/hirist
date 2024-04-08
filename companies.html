@@ -42,17 +42,17 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                                    <a class="nav-link  active fw-semibold" data-bs-placement="bottom" href="#" id="navbarDropdown"
-                                    role="button"  aria-expanded="false">
-                                    Frontend Developer
-                                    <span id="btm-color"></span>
-                                </a>
-                            <ul class="dropdown-menu"  aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">JavaScript</a></li>
-                                <li><a class="dropdown-item" href="#">React</a></li>
-                                <li><a class="dropdown-item" href="#">Angular</a></li>
-                            </ul>
-    
+                        <a class="nav-link  active fw-semibold" data-bs-placement="bottom" href="#" id="navbarDropdown"
+                            role="button" aria-expanded="false">
+                            Frontend Developer
+                            <span id="btm-color"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                            <li><a class="dropdown-item" href="#">React</a></li>
+                            <li><a class="dropdown-item" href="#">Angular</a></li>
+                        </ul>
+
                     </li>
 
                     <li class="nav-item pe-3 me-3">
@@ -85,7 +85,7 @@
                                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                         </svg></a>
 
-                    <a href="login.html" target="_blank">
+                    <a href="login.html" target="_self">
                         <button class="btn px-4" type="submit" style="border: 1px solid #e9630c;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#e9630c"
                                 class="bi bi-person" viewBox="0 0 16 16">
@@ -106,31 +106,108 @@
 
 
     <!------------------------------------------Banner section starts here---------------------------------------- -->
-    <div class="d-flex gap-1 bg-white">
+   <div class="d-flex gap-1 bg-white">
 
         <a href="#"><img src="https://d3qr48lsanmyop.cloudfront.net/webp/1688562589937.webp" class="img-fluid"
                 alt="Image-2"></a>
         <a href="#"><img src="https://d3qr48lsanmyop.cloudfront.net/webp/1688562586620.webp" class="img-fluid"
                 alt="Image-3"></a>
+     
         <a href="#"><img src="https://d3qr48lsanmyop.cloudfront.net/webp/1688562593148.webp" class="img-fluid"
                 alt="Image-1"></a>
-        <img class="company-image" src="./images/banner-images/companyimage1.webp">
+        <!-- <img class="company-image" src="./images/banner-images/companyimage1.webp">
         <a href="https://showcase.hirist.com/v2/rscp-interfaceai-5467.html?src=hirist&amp;ref=cat"
-            class="showcase-title view-showcase" target="_blank">VISIT COMPANY PAGE</a>
+            class="showcase-title view-showcase" target="_blank">VISIT COMPANY PAGE</a> -->
+        
     </div>
+</div>
     <!-- ------------------------------------------Banner section ends here---------------->
     <!-----------------------------------------------Job Companies Courses Navigation section starts here-------------------------------->
 
     <div class="d-flex mt-3 ms-5 ps-0">
-        <a href="/" class="text-secondary text-decoration-none">Jobs<i class="sc-bxivhb navigation-bar"></i></a>
-        <a href="/company" class="text-secondary text-decoration-ms-5 ps-5">Companies</a>
-        <a href="/courses" class="text-secondary text-decoration-ms-5 ps-5">Courses</a>
+        <a href="/" class="jobs text-secondary text-decoration-none">Jobs<i class="sc-bxivhb navigation-bar d-block"></i></a>
+        <a href="companies.html" class="companies text-secondary text-decoration-ms-5 ps-5">Companies<i class="sc-bxivhb navigation-bar d-none"></i></a>
+        <a href="/" target="_blank" class="courses text-secondary text-decoration-ms-5 ps-5">Courses<i class="sc-bxivhb navigation-bar d-none"></i></a>
     </div>
     <!-----------------------------------------------Job Companies Courses Navigation section Ends here-------------------------------->
 
-    <!---------------------------------------- Filter Section starts here ---------------------------------------------->
-
-    <section class="filter mt-3 pt-2 ps-5 ps-3">
+    <!---------------------------------------- Filter Section starts here ----------------------------------------------> 
+     <button type="button" class="btn btn-sm position-fixed bottom-0 start-50  translate-middle d-md-none d-sm-lg-block" data-bs-toggle="modal" data-bs-target="#filterModal" style="z-index: 1;"> 
+        Filter
+      </button> 
+      <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="filterModalLabel">Filter By:</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="btn-group">
+                    <button class="btn btn-white dropdown-toggle rounded-pill border bg-white ms-2" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Any Exp. Level
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item mb-3" href="#">Any Exp. Level</a></li>
+                        <li><a class="dropdown-item mb-3" href="#">0 - 1 Yrs</a></li>
+                        <li><a class="dropdown-item mb-3" href="#">0 - 3 Yrs</a></li>
+                        <li><a class="dropdown-item mb-3" href="#">3 - 5 Yrs</a></li>
+                        <li><a class="dropdown-item mb-3" href="#">5 - 8 Yrs</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group dropdown">
+                    <button class="btn btn-white dropdown-toggle rounded-pill border bg-white ms-2" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Any Location
+                    </button>
+                    <div class="btn-topbar"></div>
+                    <ul class="dropdown-menu">
+                        <div class="d-flex kwlbta mb-3">
+                            <div>
+                                <i class="fa-solid fa-magnifying-glass ms-2 mb-3"></i>
+                            </div>
+                            <div>
+                                <input type="text" class="jSrDpv mb-5" placeholder="Search job location here...">
+                            </div>
+                        </div>
+                        <li class="list-group-item dropdown-item ms-3 mb-3">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio"
+                                checked>
+                            <label class="form-check-label ms-2" for="firstRadio">Bangalore</label>
+                        </li>
+                        <li class="list-group-item dropdown-item ms-3 mb-3">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio"
+                                checked>
+                            <label class="form-check-label ms-2" for="firstRadio">Chennai</label>
+                        </li>
+                        <li class="list-group-item dropdown-item ms-3 mb-3">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio"
+                                checked>
+                            <label class="form-check-label ms-2" for="firstRadio">Hyderabad</label>
+                        </li>
+                        <li class="list-group-item dropdown-item ms-3 mb-3">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio"
+                                checked>
+                            <label class="form-check-label ms-2" for="firstRadio">Mumbai</label>
+                        </li>
+                        <li class="list-group-item dropdown-item ms-3 mb-3">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio"
+                                checked>
+                            <label class="form-check-label ms-2" for="firstRadio">Pune</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- ---------------------------------nrml filter--------------------------- -->
+    <section class="filter d-md-block d-none mt-3 pt-2 ps-5 ps-3">
         <span class="filter-heading">Filter By:</span>
         <div class="btn-group">
             <button class="btn btn-white dropdown-toggle rounded-pill border bg-white ms-2" type="button"
@@ -228,10 +305,12 @@
                                 </div>
 
                             </div>
-                            <div class="col-md-3 rounded pt-2 ms-5">
-                                <img src="./images/ca1.jpeg" class="card-img-top img-fluid" alt="Company Logo">
+                            <div class="d-md-block  col-md-3 rounded pt-2 ms-5">
+                                <img src="./images/ca1.jpeg" class="d-md-block d-none card-img-top img-fluid" alt="Company Logo">
+                                <div class="d-block d-md-none mb-3 ps-0 mt-3 border-top" style="width: 100%; margin-left: -60px;"></div>
                                 <a href="https://showcase.hirist.com/v2/rscp-ola-cabs-1407.html?ref=jscompanytab"
-                                    class="card-txt" target="_blank">VISIT COMPANY PAGE</a>
+                                    class="card-txt justify-content-center" target="_blank">VISIT COMPANY PAGE</a>
+                                
                             </div>
                         </div>
                     </div>
@@ -267,10 +346,12 @@
                                 </div>
 
                             </div>
-                            <div class="col-md-3 rounded pt-2 ms-5">
-                                <img src="./images/ca1.jpeg" class="card-img-top img-fluid" alt="Company Logo">
+                            <div class="d-md-block  col-md-3 rounded pt-2 ms-5">
+                                <img src="./images/ca1.jpeg" class="d-md-block d-none card-img-top img-fluid" alt="Company Logo">
+                                <div class="d-block d-md-none mb-3 ps-0 mt-3 border-top" style="width: 100%; margin-left: -60px;"></div>
                                 <a href="https://showcase.hirist.com/v2/rscp-ola-cabs-1407.html?ref=jscompanytab"
-                                    class="card-txt" target="_blank">VISIT COMPANY PAGE</a>
+                                    class="card-txt justify-content-center" target="_blank">VISIT COMPANY PAGE</a>
+                                
                             </div>
                         </div>
                     </div>
@@ -306,10 +387,12 @@
                                 </div>
 
                             </div>
-                            <div class="col-md-3 rounded pt-2 ms-5">
-                                <img src="./images/ca1.jpeg" class="card-img-top img-fluid" alt="Company Logo">
+                            <div class="d-md-block  col-md-3 rounded pt-2 ms-5">
+                                <img src="./images/ca1.jpeg" class="d-md-block d-none card-img-top img-fluid" alt="Company Logo">
+                                <div class="d-block d-md-none mb-3 ps-0 mt-3 border-top" style="width: 100%; margin-left: -60px;"></div>
                                 <a href="https://showcase.hirist.com/v2/rscp-ola-cabs-1407.html?ref=jscompanytab"
-                                    class="card-txt" target="_blank">VISIT COMPANY PAGE</a>
+                                    class="card-txt justify-content-center" target="_blank">VISIT COMPANY PAGE</a>
+                                
                             </div>
                         </div>
                     </div>
@@ -345,10 +428,12 @@
                                 </div>
 
                             </div>
-                            <div class="col-md-3 rounded pt-2 ms-5">
-                                <img src="./images/ca1.jpeg" class="card-img-top img-fluid" alt="Company Logo">
+                            <div class="d-md-block  col-md-3 rounded pt-2 ms-5">
+                                <img src="./images/ca1.jpeg" class="d-md-block d-none card-img-top img-fluid" alt="Company Logo">
+                                <div class="d-block d-md-none mb-3 ps-0 mt-3 border-top" style="width: 100%; margin-left: -60px;"></div>
                                 <a href="https://showcase.hirist.com/v2/rscp-ola-cabs-1407.html?ref=jscompanytab"
-                                    class="card-txt" target="_blank">VISIT COMPANY PAGE</a>
+                                    class="card-txt justify-content-center" target="_blank">VISIT COMPANY PAGE</a>
+                                
                             </div>
                         </div>
                     </div>
@@ -384,10 +469,12 @@
                                 </div>
 
                             </div>
-                            <div class="col-md-3 rounded pt-2 ms-5">
-                                <img src="./images/ca1.jpeg" class="card-img-top img-fluid" alt="Company Logo">
+                            <div class="d-md-block  col-md-3 rounded pt-2 ms-5">
+                                <img src="./images/ca1.jpeg" class="d-md-block d-none card-img-top img-fluid" alt="Company Logo">
+                                <div class="d-block d-md-none mb-3 ps-0 mt-3 border-top" style="width: 100%; margin-left: -60px;"></div>
                                 <a href="https://showcase.hirist.com/v2/rscp-ola-cabs-1407.html?ref=jscompanytab"
-                                    class="card-txt" target="_blank">VISIT COMPANY PAGE</a>
+                                    class="card-txt justify-content-center" target="_blank">VISIT COMPANY PAGE</a>
+                                
                             </div>
                         </div>
                     </div>
@@ -423,10 +510,12 @@
                                 </div>
 
                             </div>
-                            <div class="col-md-3 rounded pt-2 ms-5">
-                                <img src="./images/ca1.jpeg" class="card-img-top img-fluid" alt="Company Logo">
+                            <div class="d-md-block  col-md-3 rounded pt-2 ms-5">
+                                <img src="./images/ca1.jpeg" class="d-md-block d-none card-img-top img-fluid" alt="Company Logo">
+                                <div class="d-block d-md-none mb-3 ps-0 mt-3 border-top" style="width: 100%; margin-left: -60px;"></div>
                                 <a href="https://showcase.hirist.com/v2/rscp-ola-cabs-1407.html?ref=jscompanytab"
-                                    class="card-txt" target="_blank">VISIT COMPANY PAGE</a>
+                                    class="card-txt justify-content-center" target="_blank">VISIT COMPANY PAGE</a>
+                                
                             </div>
                         </div>
                     </div>
@@ -462,10 +551,12 @@
                                 </div>
 
                             </div>
-                            <div class="col-md-3 rounded pt-2 ms-5">
-                                <img src="./images/ca1.jpeg" class="card-img-top img-fluid" alt="Company Logo">
+                            <div class="d-md-block  col-md-3 rounded pt-2 ms-5">
+                                <img src="./images/ca1.jpeg" class="d-md-block d-none card-img-top img-fluid" alt="Company Logo">
+                                <div class="d-block d-md-none mb-3 ps-0 mt-3 border-top" style="width: 100%; margin-left: -60px;"></div>
                                 <a href="https://showcase.hirist.com/v2/rscp-ola-cabs-1407.html?ref=jscompanytab"
-                                    class="card-txt" target="_blank">VISIT COMPANY PAGE</a>
+                                    class="card-txt justify-content-center" target="_blank">VISIT COMPANY PAGE</a>
+                                
                             </div>
                         </div>
                     </div>
@@ -501,10 +592,12 @@
                                 </div>
 
                             </div>
-                            <div class="col-md-3 rounded pt-2 ms-5">
-                                <img src="./images/ca1.jpeg" class="card-img-top img-fluid" alt="Company Logo">
+                            <div class="d-md-block  col-md-3 rounded pt-2 ms-5">
+                                <img src="./images/ca1.jpeg" class="d-md-block d-none card-img-top img-fluid" alt="Company Logo">
+                                <div class="d-block d-md-none mb-3 ps-0 mt-3 border-top" style="width: 100%; margin-left: -60px;"></div>
                                 <a href="https://showcase.hirist.com/v2/rscp-ola-cabs-1407.html?ref=jscompanytab"
-                                    class="card-txt" target="_blank">VISIT COMPANY PAGE</a>
+                                    class="card-txt justify-content-center" target="_blank">VISIT COMPANY PAGE</a>
+                                
                             </div>
                         </div>
                     </div>
@@ -540,10 +633,12 @@
                                 </div>
 
                             </div>
-                            <div class="col-md-3 rounded pt-2 ms-5">
-                                <img src="./images/ca1.jpeg" class="card-img-top img-fluid" alt="Company Logo">
+                            <div class="d-md-block  col-md-3 rounded pt-2 ms-5">
+                                <img src="./images/ca1.jpeg" class="d-md-block d-none card-img-top img-fluid" alt="Company Logo">
+                                <div class="d-block d-md-none mb-3 ps-0 mt-3 border-top" style="width: 100%; margin-left: -60px;"></div>
                                 <a href="https://showcase.hirist.com/v2/rscp-ola-cabs-1407.html?ref=jscompanytab"
-                                    class="card-txt" target="_blank">VISIT COMPANY PAGE</a>
+                                    class="card-txt justify-content-center" target="_blank">VISIT COMPANY PAGE</a>
+                                
                             </div>
                         </div>
                     </div>
@@ -553,7 +648,7 @@
 
 
 
-            <div class="col-md-4">
+            <div class="d-none d-md-block col-md-4">
                 <div class="company-2heading mt-4">Featured Employees</div>
                 <!------------------------------------1 row-------------------------------------------- -->
                 <div class="featured-employees col-md-10 mt-4  ps-4 pb-3 pe-2 pt-3 bg-white">

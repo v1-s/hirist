@@ -55,25 +55,7 @@ img {
     vertical-align: middle;
     border: 0;
 }
-.company-image {
-    position: absolute;
-    width: 112px;
-    height: auto;
-    bottom:400px;
-    right: 4%;
-}
-/* /* @media (min-width: 677px) {
-    .company-image {
-      bottom: 200px;
-    }
-  } */
-  
-  @media (min-width: 677px) {
-    .company-image {
-      bottom: 400px;
-      z-index: 1;
-    }
-  } 
+
 #navbarDropdown:hover{
     color: #e9630c;
 } 
@@ -83,7 +65,14 @@ img {
   
     /* margin-top: 20px; */
     display: block !important;
-  }
+}
+.company-image {
+    position: absolute;
+    width: 112px;
+    height: auto;
+    bottom:400px;
+    right: 4%;
+}
 .showcase-title {
     font-size: 12px;
     font-weight: 500;
@@ -92,19 +81,7 @@ img {
     margin-bottom: 320px;
     margin-left: 85%;
 }
-/* @media (min-width: 768px) {
-    .showcase-title {
-      margin-bottom: 200px;
-      margin-left: 70%;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .showcase-title {
-      margin-bottom: 100px;
-      margin-left: 60%;
-    }
-  } */
+
 .view-showcase {
     width: auto;
     height: 38px;
@@ -120,34 +97,35 @@ img {
     bottom: 28px;
     cursor: pointer;
 }
-/* @media (min-width: 768px) {
-    .view-showcase {
-      bottom: 50px;
-    }
-  }
-  /*  */
-  @media (min-width: 992px) {
-    .view-showcase {
-      bottom: 28px;
-    }
-  } 
+
 .view-showcase:hover{
     color: blue;
 }
-@media screen and (min-width: 601px)
-.view-showcase {
-    right: 3%;
+/* ---- */
+
+@media  (max-width: 991.98px)  {
+    #filterModal {
+      display: none;
+      /* background-color: #000; */
+    }
+  }
+
+.companies:hover .d-none,
+.courses:hover .d-none,
+.jobs:hover .d-none{
+    display: block !important;
 }
+
+
 /*----------------------------------------Jobs companies Navigation section starts here--------------------------- */
 
-@media (max-width: 1279px)
+/* @media (max-width: 1279px)
 <style>
 .gHTEMV {
     margin-left: 31px;
 }
 
-element.style {
-}
+
 @media (max-width: 1279px)
 .gHTEMV {
     margin-left: 31px;
@@ -157,7 +135,7 @@ element.style {
 <style>
 .jUEpQc {
     margin-left: 31px;
-}
+} */
 
 .navigation-bar{
     display: block;
